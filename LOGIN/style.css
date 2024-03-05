@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(195, 227, 255);
+}
+/*การจัดวาง box*/
+.container{
+    display: flex;
+    height: 500px;
+    width: 800px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 15px 15px 20px rgb(18, 114, 173);
+}
+.form{ /* Login Form */
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    background-color: rgb(203, 240, 255);
+}
+.form h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*รูปแบบฟ้อน*/
+    font-size: 50px;
+    margin: 45px; /*ระยะห่างบรรทัด*/
+}
+.box{
+    padding: 6px 12px; /*ขนาดความสูง*/
+    width: 65%; /*กว้าง*/
+    margin: 15px; /*ระยะห่างบรรทัด*/
+    border-radius: 20px; /*รัศมีโค้ง*/
+    border-color: rgb(93, 119, 234); /*สีกรอบของกล่อง enter pass / email */
+    color: rgb(15, 15, 15); /*สีตัวอักษรตอนป้อนข้อมูล*/
+}
+#submit{
+    padding: 12px 30px;/*ความสูง/ขนาด submit*/
+    width: 65%; /*ความกว้าcงbox ของ submit*/
+    margin-top: 35px; /*ระยะห่างบรรทัด*/
+    background-color: rgb(1, 1, 1);
+    color: white;
+    font-weight: bold; /*รูปแบบฟ้อน*/
+    border-radius: 50px; /*รัศมีโค้ง*/
+}
+#submit:hover{ /*กดSubmitได้ cursor ชี้เป็นสีฟ้าอ่อน*/
+    cursor: pointer;
+    background-color: lightsteelblue;
+}
+.form a{  /*forget password ตัวหนังสือสีดำ*/
+    color: black;
+    margin-top: 50;
+}
+.form a:hover{ /*กดforget passwordได้ cursor ชี้เป็นสีฟ้าอ่อน*/
+    color: lightsteelblue;
+}
+.side{ /*ขนาดความกว้างช่วงพื้นหลัง login*/
+    width: 50%;
+}
